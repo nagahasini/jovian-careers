@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>first web page</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="navbar">
+        <img id="logo" src="logo.png" alt="">
+    </div>
+    <img id="banner" src=https://images.unsplash.com/photo-1504805572947-34fad45aed93?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=870&q=80 alt="error" height="240">
+    <h1 style="text-align: center;">About Jovian</h1>
+    <!-- here we want description and team image separate so we place it under same div and give individually diff div and use display flex to get them beside beside  -->
+    <div id="about">
+        <div id="description">
+            Description
+            <p>
+                At jovian we are on a mission to build the worlds most highly reputed technical universsity and we are building completely online. We offer several courses begginer friendly.
+                we also offer bootcamps:
+                <ol>
+                    <li>
+                        <a href="https://www.jovian.com/full-stack-developer-bootcamp" target="_blank"> bootcamp</a> </li>
+                    <li>
+                        <a href="https://www.jovian.com/data-science-bootcamp" target="_blank">data science</a>
+                    </li>
+                </ol>
+            </p>
+        </p>
+                <p>
+
+        </div>
+        <div id="team">
+            <img id="team-image" src="team.jpg" alt="team">
+        </div>
+    </div>
+    
+  
+    <h2>Job Oppurtunities</h2>
+    <div class="jobs">
+       <!-- we are creating table in place of that information  -->
+       <table id="jobs-table">
+        <tr class="jobs-header-row">
+            <!-- merging in tables  -->
+            <th rowspan="2">Job title</th>
+            <th colspan="2">Location</th>
+            <th rowspan="2"> Salary</th>
+            <th rowspan="2">Posted On</th>
+        </tr>
+        <tr>
+            <th style="border-right: 1px solid gray;">city
+            </th>
+            <th>country</th>
+        </tr>
+        <tr class="jobs-data-row">
+            <td>Frontend Developer</td>
+            <td>Bengaluru,India</td>
+            <td>₹12,00,000 </td>
+            <td>Mar 3,2023</th>
+        </tr>
+        <tr class="jobs-data-row">
+            <td>Full stack Developer</td>
+            <td>New delhi,India</td>
+            <td>₹15,00,000</td>
+            <td>Feb 1,2023</td>
+        </tr>
+        <tr class="jobs-data-row">
+            <td>Data scientist</td>
+            <td>san francisco,USA</td>
+            <td>$175,000</td>
+            <td>Dec 22,2022</td>
+        </tr>
+        <tr class="jobs-data-row">
+            <td>machine learing engineer</td>
+                <td>Remote</td>
+                <td>$80,000</td>
+                <td>Sep 19,2022</td>
+            
+        </tr>
+       </table>
+       <div id="Application">
+        <h2 style="text-align: center;">Submit Your Application</h2>
+        <form id="application-form">
+            <div class="text">
+                <label for="name">Name</label><br>
+                <input type="text" id="name" name="name" required placeholder="John Doe">
+            </div>
+    
+            <div class="text">
+                <label for="email">Email</label><br>
+                <input type="email" id="email" name="email" required placeholder="jdoe@example.com">
+            </div>
+            <div class="text">
+    
+                <label for="phone">Phone</label><br>
+                <input type="tel" id="phone" name="phone" required placeholder="+919898989898">
+            </div>
+    
+            <div class="text">
+                <label for="dob">Date of Birth</label><br>
+                <input type="date" id="dob" name="dob" required>
+            </div>
+    
+            <div class="text">
+                <label for="position">Position Applied for</label><br>
+                <select id="position" name="position" required>
+                    <option value="">Select an option</option>
+                    <option value="Frontend Developer">Frontend Developer</option>
+                    <option value="Full Stack Developer">Full Stack Developer</option>
+                    <option value="Data Scientist">Data Scientist</option>
+                    <option value="ML Engineer">ML Engineer</option>
+                </select>
+            </div>
+    
+            <div class="text">
+                <label for="resume">Upload Resume</label><br>
+                <input type="file" id="resume" name="resume" accept=".pdf,.doc,.docx" required>
+            </div>
+    
+            <div class="text">
+                <label for="coverletter">Cover Letter</label><br>
+                <textarea id="coverletter" name="coverletter" rows="5" required placeholder="Explain what makes you suitable for the job.."></textarea>
+            </div>
+            
+          
+            <div class="text" >
+                <label for="terms">
+                    <input type="checkbox" id="terms" name="terms" required>
+                  <span id="agree"> I do agree to the terms and conditions</span>
+                </label>
+            </div>
+          
+            <div class="text">
+                <strong>Gender:</strong><br>
+                Male: <input type="radio" name="gender" id="gender"> Female: <input type="radio" name="gender" id="gender">
+             </div>
+             <div id="submit">
+             <button>Submit</button>
+             </div>
+
+            </div>
+            
+
+         
+
+            
+        </form>
+
+       </div>
+
+       </table>
+    <div id="footer">
+        <ul id="footer-links">
+            <li>Courses</li>
+            <li>Programs</li>
+             <li>Youtube</li>
+        </ul>
+        <div style="text-align: center;"> © 2023 Jovian</div>
+    </div>
+
+</body>
+</html>
